@@ -7,7 +7,7 @@ namespace FastFood.Model
     public class Cliente
     {
         [Key]
-        public int Id { get; set; }
+        public int id { get; set; }
         [Required]
         [MaxLength(45)]
         public string nome { get; set; }
