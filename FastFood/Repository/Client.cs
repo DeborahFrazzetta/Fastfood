@@ -1,6 +1,6 @@
 ﻿namespace FastFood.Repository
 {
-    public class PiattoRepo
+    public class Client
     {
     }
 }
