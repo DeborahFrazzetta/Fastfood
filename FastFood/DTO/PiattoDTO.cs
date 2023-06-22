@@ -2,11 +2,9 @@
 {
     public class PiattoDTO
     {
-        private int id { get; set; }
-        private string descrizione { get; set; }
-        private string is_vegetariano { get; set; }
-        private int prezzo { get; set; }
-
-
-    }
+        public int id { get; set; }
+        public string descrizione { get; set; }
+        public bool is_vegetariano { get; set; }
+        public int prezzo { get; set; }
+    }    
 }

@@ -1,11 +1,14 @@
 ﻿namespace FastFood.DTO
 {
-    private class ClienteDTO
+
+    public class ClienteDTO
     {
-        private int id { get; set; }
-        private string nome { get; set; }
-        private bool is_vegetariano { get; set; }
-         private int eta { get; set; }
+        public int id { get; set; }
+        public string nome { get; set; }
+        public bool is_vegetariano { get; set; }
+        public  int eta { get; set; }
+
+
 
     }
 }

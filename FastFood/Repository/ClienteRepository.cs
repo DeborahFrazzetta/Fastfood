@@ -1,6 +1,6 @@
 ﻿namespace FastFood.Repository
 {
-    public class Dish
+    public class ClienteRepository
     {
     }
 }
