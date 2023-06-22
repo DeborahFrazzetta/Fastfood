@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace FastFood.Model
 {
     [Table("cliente")]
-    public class Cliente
+   public class Cliente
     {
         [Key]
         public int id { get; set; }
