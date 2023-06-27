@@ -1,4 +1,5 @@
-﻿using FastFood.Model;
+﻿using FastFood.DTO;
+using FastFood.Model;
 
 namespace FastFood.Repository
 {
@@ -39,13 +40,23 @@ namespace FastFood.Repository
         }
         #endregion
 
-        public bool Delete(int id)
+        public bool Delete(Cliente delete)
         {
-            Cliente cliente = _context.Cliente.Find(id);
-            if (cliente == null) return false;
-            _context.Remove(cliente);
+            
+            _context.Remove(delete);
             int result = _context.SaveChanges();
             return result > 0;
+
+        }
+
+        public bool Update(ClienteDTO dto)
+        {
+            var entity = ClienteDTO.GetEntity(dto);
+            _context.Update(entity);
+            int righe = _context.SaveChanges();
+            return righe > 0;
+
+            
 
         }
     }

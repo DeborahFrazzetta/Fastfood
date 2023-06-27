@@ -31,8 +31,8 @@ namespace FastFood.DTO
                 id = dto.id,
                 nome = dto.nome,
                 is_vegetariano = dto.is_vegetariano,
-                eta=dto.eta,
-            }
+                eta = dto.eta,
+            };
         }
 
     }

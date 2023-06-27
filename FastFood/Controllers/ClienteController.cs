@@ -67,6 +67,19 @@ namespace FastFood.Controllers
             return c;
         }
 
+        [HttpDelete]
+        public IActionResult DeleteCliente([FromBody] ClienteDTO dto)
+        {
+            var result = _repo.Delete(dtoToEntity(dto));
+            return this.Ok(result);
+        }
+        [HttpPost("Update")]
+        public IActionResult UpdateCliente([FromBody] ClienteDTO dto)
+        {
+            var result = _repo.Update(dto);
+            return this.Ok(result);
+
+        }
         
             
 
